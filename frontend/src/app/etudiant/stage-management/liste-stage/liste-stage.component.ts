@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { Stage } from '../../../model/model';
 import { StageServiceService } from '../../../service/stage-service.service';
 import { SideBarEtudiantComponent } from "../../side-bar-etudiant/side-bar-etudiant.component";
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { UserProfileMenuComponent } from "../../../user-profile-menu/user-profile-menu.component";
 import { EtudiantService } from '../../../service/etudiant.service';
@@ -10,7 +10,7 @@ import { EtudiantService } from '../../../service/etudiant.service';
 @Component({
   selector: 'app-liste-stage',
   standalone: true, // Ajouté pour correspondre au style du composant AddStageComponent
-  imports: [SideBarEtudiantComponent, CommonModule, RouterLink, UserProfileMenuComponent],
+  imports: [NgClass,SideBarEtudiantComponent, CommonModule, RouterLink, UserProfileMenuComponent],
   templateUrl: './liste-stage.component.html',
   styleUrl: './liste-stage.component.css'
 })
@@ -96,4 +96,12 @@ export class ListeStageComponent {
       }
     });
   }
+
+
+ isStageValidate(stage:any){
+  if(stage.statutRapport==='VALIDE'){
+    return 'stage-validate';
+  }
+  return 'stage-row';
+ }
 }

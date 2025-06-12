@@ -8,7 +8,7 @@
 
     <div class="stages-container">
       <div class="stage-list">
-        <div class="stage-row stage-header">
+        <div class="stage-row stage-header" >
           <div>Entreprise</div>
           <div>Adresse</div>
           <div >Encadrant</div>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="stage-item-container" *ngFor="let stage of stages">
-          <div class="stage-row " >
+          <div class="stage-row " [ngClass]="isStageValidate(stage)" >
             <div>{{ stage.nomEntreprise }}</div>
             <div>{{ stage.adresseEntreprise }}</div>
             <div>{{ stage.nomEncadrant }}</div>
