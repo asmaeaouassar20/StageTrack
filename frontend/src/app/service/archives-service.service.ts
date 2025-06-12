@@ -27,7 +27,7 @@ export interface ArchiveDto {
   providedIn: 'root'
 })
 export class ArchivesService {
-  private apiUrl = 'http://localhost:8081/api';
+  private apiUrl = 'http://localhost:8080/api';
 
   constructor(private http: HttpClient) {}
 

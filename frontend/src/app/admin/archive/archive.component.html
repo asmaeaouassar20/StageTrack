@@ -265,10 +265,10 @@
           <option *ngFor="let annee of annees" [value]="annee">{{ annee }}</option>
         </select>
         
-        <button class="export-btn" (click)="exportExcel()" [disabled]="!selectedAnnee || isLoading">
+        <!-- <button class="export-btn" (click)="exportExcel()" [disabled]="!selectedAnnee || isLoading">
           <i class="fas fa-file-excel"></i> 
           {{ isLoading ? 'Chargement...' : 'Exporter Excel' }}
-        </button>
+        </button> -->
       </div>
       
       <div *ngIf="isLoading" class="loading-container">
@@ -284,7 +284,7 @@
               <th>Titre</th>
               <th>Tuteur</th>
               <th>Date dépôt</th>
-              <th>Note</th>
+              <!-- <th>Note</th> -->
               <th>Actions</th>
             </tr>
           </thead>
@@ -297,7 +297,7 @@
               <td>{{ archive.titre }}</td>
               <td>{{ archive.tuteur?.nom }}</td>
               <td>{{ formatDate(archive.dateDepot) }}</td>
-              <td class="note-cell">
+              <!-- <td class="note-cell">
                 <span *ngIf="archive.note && archive.note !== null && archive.note !== ''" 
                       class="note-valide">
                   {{ archive.note }}/20
@@ -306,7 +306,7 @@
                       class="note-non-notee">
                   Non noté
                 </span>
-              </td>
+              </td> -->
               <td>
                 <button class="action-btn btn-view" 
                         (click)="viewArchive(archive)"

@@ -1,6 +1,5 @@
 .div-container {
     display: flex;
-    height: 100vh;
 }
 
 .main-content{
@@ -8,8 +7,8 @@
     background: #e9ecf0;
     padding: 20px;
     margin-top: 60px;
-    max-height: calc(100vh - 60px);
     margin-left: 250px;
+    margin-bottom: 100px;
 }
 
 .sidebar {

@@ -30,7 +30,7 @@ export interface RapportStageDto {
   providedIn: 'root'
 })
 export class RapportService {
-  private apiUrl = 'http://localhost:8081/api';
+  private apiUrl = 'http://localhost:8080/api';
 
   constructor(private http: HttpClient) {}
 
