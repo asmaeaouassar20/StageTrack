@@ -13,10 +13,12 @@
 }
 
 .logo {
-    font-family: "Oleo Script", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.5rem;
+    width: 78px;
+    height: 78px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 nav {

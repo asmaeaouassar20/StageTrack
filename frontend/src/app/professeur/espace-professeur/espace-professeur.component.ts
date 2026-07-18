@@ -1,16 +1,14 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { Etudiant } from '../../model/model';
-import { ServiceService } from '../../service/service.service';
 import { SideBarProfComponent } from "../side-bar-prof/side-bar-prof.component";
 import { NgFor, NgIf } from '@angular/common';
 import { EtudiantService } from '../../service/etudiant.service';
-import { UserProfileMenuComponent } from "../../user-profile-menu/user-profile-menu.component";
 
 @Component({
   selector: 'app-espace-professeur',
   standalone: true,
-  imports: [SideBarProfComponent, NgFor, NgIf, UserProfileMenuComponent],
+  imports: [SideBarProfComponent, NgFor, NgIf],
   templateUrl: './espace-professeur.component.html',
   styleUrl: './espace-professeur.component.css'
 })

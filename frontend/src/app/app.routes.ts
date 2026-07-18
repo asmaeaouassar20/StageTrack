@@ -25,19 +25,17 @@ import { EnseignantCreateComponent } from './admin/enseignant-management/enseign
 import { EnseignantEditComponent } from './admin/enseignant-management/enseignant-edit/enseignant-edit.component';
 import { EnseignantDetailsComponent } from './admin/enseignant-management/enseignant-details/enseignant-details.component';
 import { EnseignantDeleteComponent } from './admin/enseignant-management/enseignant-delete/enseignant-delete.component';
-<<<<<<< HEAD
-import { AddEnseignantComponent } from './admin/enseignant-management/add-enseignant/add-enseignant.component';
+// import { AddEnseignantComponent } from './admin/enseignant-management/add-enseignant/add-enseignant.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { ChatEtudiantComponent } from './chat-etudiant/chat-etudiant.component';
 import { ChatEtudiantsComponent } from './chat-etudiants/chat-etudiants.component';
 import { ChatEnseignantsComponent } from './chat-enseignants/chat-enseignants.component';
 import { ChatHomeComponent } from './chat-home/chat-home.component';
-=======
+
 import { AddStageComponent } from './etudiant/stage-management/add-stage/add-stage.component';
 import { ListeStageComponent } from './etudiant/stage-management/liste-stage/liste-stage.component';
 
 import { UpdateStageComponent } from './etudiant/stage-management/update-stage/update-stage.component';
->>>>>>> origin/branche-ilham
 
 export const routes: Routes = [
     {path:'',redirectTo:'/main-home',pathMatch:'full'},

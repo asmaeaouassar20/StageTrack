@@ -6,7 +6,7 @@ import { SideBarAdminComponent } from "../side-bar-admin/side-bar-admin.componen
 @Component({
   selector: 'app-dashboard',
   standalone:true,
-  imports: [NgFor, NgIf, RouterLink, SideBarAdminComponent],
+  imports: [NgFor, NgIf, SideBarAdminComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })

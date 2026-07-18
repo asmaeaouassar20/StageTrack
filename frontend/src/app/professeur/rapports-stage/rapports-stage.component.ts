@@ -1,13 +1,4 @@
 
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-rapports-stage',
-  imports: [],
-  templateUrl: './rapports-stage.component.html',
-  styleUrl: './rapports-stage.component.css'
-})
-export class RapportsStageComponent {
 import { DatePipe, NgClass, NgStyle } from '@angular/common';
 import { Component ,ElementRef,inject,OnInit,ViewChild} from '@angular/core';
 import { RouterLink } from '@angular/router';
@@ -31,6 +22,7 @@ import { SideBarProfComponent } from "../side-bar-prof/side-bar-prof.component";
   templateUrl: './rapports-stage.component.html',
   styleUrl: './rapports-stage.component.css'
 })
+
 export class RapportsStageComponent implements OnInit{
 
   listDepotsRapport:DepotRapportStage[]=[];
